@@ -24,3 +24,7 @@ function parImpar(number) {
     return "impar";
   }
 }
+
+document.writeln(
+  `<p> O número ${number} é <strong> ${parImpar(number)}</strong></p>`,
+);
