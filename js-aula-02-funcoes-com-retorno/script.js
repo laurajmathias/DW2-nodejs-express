@@ -28,3 +28,5 @@ function parImpar(number) {
 document.writeln(
   `<p> O número ${number} é <strong> ${parImpar(number)}</strong></p>`,
 );
+
+// Sempre que chamar uma variável dentro de uma string. deve ser usada a crase, ademais,não funciona. 
