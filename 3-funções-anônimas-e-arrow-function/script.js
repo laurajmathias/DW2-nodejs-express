@@ -37,3 +37,27 @@ const num2 = 2;
 document.write(`<p>O resultado de ${num1} ${operador} ${num2} é igual a: ${calculadora(num1, operador, num2)}</p>`); 
 
 
+//FUNÇÃO IMEDIATA (IIFE - Immeadiatily Invoked Function Expression) o tipo de função que não precisa ser invocada 
+
+const imediata = (function(){
+
+    document.write(`<p> Estou sendo executada imediatamente</p>`); 
+}); //Passando os parâmetros; 
+
+//FUNÇÃO IMEDIATA - COM PARÂMETROS
+const loadUser = (function (user) {
+
+    document.write(`<p>Carregando as informações do usuário: <strong>${user}</strong>...</p>`)
+
+    //Mostrando após tres segundos: 
+
+    setTimeout(() => {
+        document.write(`
+            Nome: Laura Julia <br>
+            Idade: 18 anos<br>
+            Cidade: Sete Barras <br>
+            Hobby: Desenhar
+            `)
+    }, 3000); 
+
+})("Diego"); //Passando o parâmetro
