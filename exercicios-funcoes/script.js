@@ -27,6 +27,12 @@ function divisão(n1, n2) {
 
 divisão(n1, n2); 
 
+//  EXERCICIO 3 - 
+
+    Document.write(`<h3>Exercicio 3</h3>`); 
+
+    z 
+
 
 
 
