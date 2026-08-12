@@ -4,8 +4,10 @@ document.write(`<p> Exercicio 1)</p>`);
 
 
 function showMessage() {
-  const nome = Laura;
-  document.write(nome);
+    const nome = (Laura);   
+
 }
+
+
 
 
