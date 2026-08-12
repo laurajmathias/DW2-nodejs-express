@@ -29,4 +29,11 @@ const calculadora = (num1, operador, num2) => {
     return eval(`${num1} ${operador} ${num2}`); 
 }
 
+const num1 = 8; 
+const operador = `*`; 
+const num2 = 2; 
+
+
+document.write(`<p>O resultado de ${num1} ${operador} ${num2} é igual a: ${calculadora(num1, operador, num2)}</p>`); 
+
 
