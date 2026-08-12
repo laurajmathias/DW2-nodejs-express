@@ -61,3 +61,6 @@ const loadUser = (function (user) {
     }, 3000); 
 
 })("Diego"); //Passando o parâmetro
+
+
+
