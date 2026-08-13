@@ -31,7 +31,7 @@ divisão(n1, n2);
 
     Document.write(`<h3>Exercicio 3</h3>`); 
 
-    z 
+    
 
 
 
