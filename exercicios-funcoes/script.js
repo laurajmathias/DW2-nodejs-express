@@ -94,6 +94,25 @@ const triplo = (y) => {
 
 document.write("O triplo do número é " + triplo(10));
 
+//EXERCÍCIO 7 - 
+
+const soma = (num1, num2, num3, num4) => {
+
+    return num1 + num2 + num3 + num4; 
+
+}
+
+const num1 = 8; 
+const num2 = 7; 
+const num3 = 6; 
+const num4 = 5; 
+
+document.write(`<p>O resultado da soma dos quatro números é de:  ${soma(num1, num2, num3, num4)}</p>`); 
+
+
+
+
+
 
 
 
