@@ -109,9 +109,13 @@ const num4 = 5;
 
 document.write(`<p>O resultado da soma dos quatro números é de:  ${soma(num1, num2, num3, num4)}</p>`); 
 
+//EXERCÍCIO 8 - 
 
+(function (user) {
 
+    console.log(`Olá, ${user}! Seja bem-vindo!`);
 
+})("Laura ");
 
 
 
