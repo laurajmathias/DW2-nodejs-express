@@ -31,6 +31,21 @@ divisão(n1, n2);
 
     Document.write(`<h3>Exercicio 3</h3>`); 
 
+    const n1; 
+    const n2; 
+    const n3; 
+
+    document.write(`<p>Digite o primeiro número: </p>`);
+    document.write(`<p> Digite o segundo úmero: </p> `); 
+    document.write(`<p> Digite o terceiro número: </p>`)
+
+    function multipliação (n1, n2, n3) {
+        let resultado = n1 * n2 * n3; 
+        document.write(`O resultado de ${n1} * ${n2} * ${n3}`)
+    }
+
+
+
     
 
 
