@@ -34,7 +34,7 @@ divisão(n1, n2);
     const n1 = 7; 
     const n2 = 45; 
     const n3 = 2; 
-    
+
 
     function multiplicar (n1, n2, n3) {
         return n1 * n2 * n3; 
@@ -42,11 +42,48 @@ divisão(n1, n2);
 
     document.write(`<p> O resultado da mulplicação de ${n1} por ${n2} por ${n3} é igual a: <strong> ${multiplicar(n1, n2, n3)}</strong></p>`)
 
+// EXERCÍCIO 4 - 
+
+document.write(`<h3>Exercício 4 </h3>`); 
+
+const idade = 19; 
+
+function maiorIdade(idade) { 
+
+    if (idade >= 18) {
+        return "Maior de idade"; 
+    } else {
+        return "Menor de idade"; 
+    }
+} 
+
+document.write(`<p>O usuário tem ${idade} e, portanto, é <strong>${maiorIdade(idade)}</strong></p>`); 
 
 
 
+// EXERCÍCIO 5 - 
 
+
+document.write(`<h3>Exercício 5</h3>`); 
+
+const media = function (nota1, nota2) {
+
+ let resultado = (nota1 + nota2) /2; 
+
+ if (resultado <=7) { 
+    return "Reprovado"; 
+ } else {
+    return "Aprovado"; 
+ }
+    const nota1 = 8; 
+    const nota2 = 7;
     
+    document.write(`<p>A média do aluno é: ${media(nota1, nota2)} `); 
+}
+
+
+
+        
 
 
 
