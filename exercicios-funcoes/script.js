@@ -29,32 +29,19 @@ divisão(n1, n2);
 
 //  EXERCICIO 3 - 
 
-    Document.write(`<h3>Exercicio 3</h3>`); 
+    document.write(`<h3>Exercicio 3</h3>`); 
 
     const n1 = 7; 
     const n2 = 45; 
     const n3 = 2; 
+    
 
-    document.write(`<p>Digite o primeiro número: </p>`);
-    document.write(`<p> Digite o segundo úmero: </p> `); 
-    document.write(`<p> Digite o terceiro número: </p>`)
-
-    function multipliação (n1, n2, n3) {
+    function multiplicar (n1, n2, n3) {
         return n1 * n2 * n3; 
     }
 
-    document.write(`<p> O resultado da mulplicação de ${n1} por ${n2} por ${n3} é igual a: <strong> ${multipliação(n1, n2, n3)}</strong></p>`)
+    document.write(`<p> O resultado da mulplicação de ${n1} por ${n2} por ${n3} é igual a: <strong> ${multiplicar(n1, n2, n3)}</strong></p>`)
 
-
-    
-function miltiplicar(n1, n2) {
-  return n1 * n2; // * - Operador de muliplicação;
-}
-
-// EXIBINDO O RESULTADO:
-document.write(
-  `<p>A multipliação de ${n1} por ${n2}é igual a <strong>${multiplicar(n1, n2)} </strong></p>`,
-);
 
 
 
