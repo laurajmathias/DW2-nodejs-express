@@ -81,6 +81,22 @@ const media = function (nota1, nota2) {
     document.write(`<p>A média do aluno é: ${media(nota1, nota2)} `); 
 }
 
+//EXERCÍCIO 6 - 
+
+document.write(`<h3>Exercício 6</h3>`); 
+
+
+
+const triplo = (y) => {
+
+    return y * 3; 
+}
+
+document.write("O triplo do número é " + triplo(10));
+
+
+
+
 
 
         
