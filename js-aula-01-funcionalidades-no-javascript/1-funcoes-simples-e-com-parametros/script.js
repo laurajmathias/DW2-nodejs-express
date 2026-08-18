@@ -1,4 +1,4 @@
-// FUNÇÃO SIMPLES
+  // FUNÇÃO SIMPLES
 
 function showMessage() {
   const message = "<h2> Olá, bem vindo!</h2>";

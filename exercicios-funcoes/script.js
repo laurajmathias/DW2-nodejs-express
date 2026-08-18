@@ -31,9 +31,9 @@ divisão(n1, n2);
 
     Document.write(`<h3>Exercicio 3</h3>`); 
 
-    const n1; 
-    const n2; 
-    const n3; 
+    const n1 = 7; 
+    const n2 = 45; 
+    const n3 = 2; 
 
     document.write(`<p>Digite o primeiro número: </p>`);
     document.write(`<p> Digite o segundo úmero: </p> `); 
