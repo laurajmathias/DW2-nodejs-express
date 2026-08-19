@@ -44,10 +44,10 @@ document.write('<p> Agora a lista é: ${frutas </p>');
     document.write('Os números são: ${numeros}'); 
 
     //ORDENANDO CRESCENTE: 
-    document.write('<p>Os númerosordenados são: ${numeros.sort((a, b) => a - b)}</p>');
+    document.write('<p>Os números ordenados de forma crescente são: ${numeros.sort((a, b) => a - b)}</p>');
 
     //ORDENANDO DESCRESCENTE: 
-        document.write('<p>Os númerosordenados são: ${numeros.sort((a, b) => b - a)}</p>');
+        document.write('<p>Os números ordenados de forma decrescente são: ${numeros.sort((a, b) => b - a)}</p>');
 
 
     
