@@ -15,3 +15,10 @@ document.write('<p>${produtos[0]}</p>')
 document.write('<p>${produtos[1]}</p>')
 document.write('<p>${produtos[2]}</p>')
 document.write('<p>${produtos[3]}</p>')
+
+
+
+
+document.write("<br> Exibindo os itens do vetor através do <strong> forEach: </strong>"); 
+
+
