@@ -46,6 +46,10 @@ document.write('<p> Agora a lista é: ${frutas </p>');
     //ORDENANDO CRESCENTE: 
     document.write('<p>Os númerosordenados são: ${numeros.sort((a, b) => a - b)}</p>');
 
+    //ORDENANDO DESCRESCENTE: 
+        document.write('<p>Os númerosordenados são: ${numeros.sort((a, b) => b - a)}</p>');
+
+
     
     
     
