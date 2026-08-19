@@ -34,4 +34,14 @@ document.write('<p> Agora a lista é: ${frutas </p>');
 
     document.write('<p> O primeiro item da lista é: ${frutasOrdenadas}</p>'); 
 
+
+    document.write('<p>Lista de frutas ordenadas: ${frutasOrdenadas}</p>'); 
     
+
+    // MÉTODO SORT 1.2 - ORDENANOD EM ORDEM CRESCENTE E DECRESCENTE: 
+
+    let numeros = [6, 8, 2, 9, 3, 800, 200]; 
+    document.write('Os números são: ${numeros}'); 
+    document.write('<p>Os númerosordenados são: ${numeros.sort()}</p>                   '); 
+
+
