@@ -21,4 +21,21 @@ document.write('<p>${produtos[3]}</p>')
 
 document.write("<br> Exibindo os itens do vetor através do <strong> forEach: </strong>"); 
 
+produtos.forEach( produto => { 
+
+    //Para cada "produto" da lista de "produtos", faça tal... 
+
+    document.write('<p>${produtp} </p>')
+
+})
+
+
+document.write("<br>Exibindo os itens do vetor e os índices como  forEach: ")
+produtos.forEach((produto, indice) => {
+    document.write('<p> ${indice} - ${produto} </p>'); 
+    
+})
+
+
+
 
