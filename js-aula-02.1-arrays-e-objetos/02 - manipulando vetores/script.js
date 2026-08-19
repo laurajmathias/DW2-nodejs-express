@@ -24,3 +24,11 @@ document.write('<p> Agora a lista é: ${frutas </p>');
     document.write('Na nossa lista temos: ${frutas.length} ftutas. '); 
 
     
+
+    //MÉTODO SORT - ORDENA OS ITENS DO VETOR: 
+
+    document.write('<p> o primeiro item da lista é: ${frutas[0]} </p>'); 
+
+
+    let frutasOrdenadas = frutas.sort(); 
+    
