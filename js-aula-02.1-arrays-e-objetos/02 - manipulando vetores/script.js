@@ -42,7 +42,11 @@ document.write('<p> Agora a lista é: ${frutas </p>');
 
     let numeros = [6, 8, 2, 9, 3, 800, 200]; 
     document.write('Os números são: ${numeros}'); 
-    document.write('<p>Os númerosordenados são: ${numeros.sort()}</p>');
+
+    //ORDENANDO CRESCENTE: 
+    document.write('<p>Os númerosordenados são: ${numeros.sort((a, b) => a - b)}</p>');
+
+    
     
     
 
