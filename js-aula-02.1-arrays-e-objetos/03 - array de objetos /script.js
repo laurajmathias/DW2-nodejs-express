@@ -31,7 +31,17 @@ const listaProdutos = [
     nome: "Iphone 17", 
     marca: "Apple", 
     preco: 17000, 
-    descricao: "Não quebra nunca", 
+    descricao: "Ultra resistente! Não quebra nunca!", 
     }]; 
 
-    
+    // EXIBINDO AS INFORMAÇÕES DOS PRODUTOS COM FOREACH: 
+
+    document.write('<h4> Produtos em promoção:</h4>')
+
+    listaProdutos.forEach(produto => {
+
+        document.write(
+              '
+              Produto: ${produto.nome} Marca: ${produto.marca}'
+        )
+    })
