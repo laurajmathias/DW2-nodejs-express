@@ -32,9 +32,18 @@ produtos.forEach( produto => {
 
 document.write("<br>Exibindo os itens do vetor e os índices como  forEach: ")
 produtos.forEach((produto, indice) => {
-    document.write('<p> ${indice} - ${produto} </p>'); 
-    
+    document.write('<p> ${indice + 1} - ${produto} </p>'); 
+
 })
+
+// RECAP DA AULA: 
+
+// 1) CRIAMOS UM VETOR, DEPOIS EXIBIMOS OS ITENS E INDICES DO VETOR... 
+
+
+
+
+
 
 
 
