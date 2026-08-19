@@ -31,4 +31,7 @@ document.write('<p> Agora a lista é: ${frutas </p>');
 
 
     let frutasOrdenadas = frutas.sort(); 
+
+    document.write('<p> O primeiro item da lista é: ${frutasOrdenadas}</p>'); 
+
     
