@@ -12,3 +12,15 @@ document.write('<p> Agora a lista é: ${frutas');
 
 frutas.push('Abacaxi'); 
 document.write('<p> Agora a lista é: ${frutas </p>'); 
+
+
+// MÉTODO UNSHIFT - INSERE UM NOVO ELEMENTO NO ÍNICIO DO VETOR: 
+
+    frutas.unshift('Pera'); 
+    document.write('<p> Agora a lista é: ${frutas </p>'); 
+
+    //MÉTODO LENGTH - RETORNA O NPUMEOR DE ELEMENTOS NO VETOR: 
+
+    document.write('Na nossa lista temos: ${frutas.length} ftutas. '); 
+
+    
