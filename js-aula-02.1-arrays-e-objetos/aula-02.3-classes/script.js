@@ -19,3 +19,9 @@
             return "Beep! Beep!"; 
         }
     }
+
+    //Criando uma instância (obejto) da classe Carro:
+    const carroPopular = new Carro("Fiat", "Uno", "2012"); 
+
+    //Acessando os ATRIBUTOS e MÉTODOS do objeto: 
+    document.write('<p> O carro ${carroPopular.marca}, modelo${carroPopular.modelo} é do ano: ${carroPopular.ano} e quando ele buzina faz: ${carroPopular.buzinar()}</p>')
