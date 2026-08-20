@@ -25,3 +25,6 @@
 
     //Acessando os ATRIBUTOS e MÉTODOS do objeto: 
     document.write('<p> O carro ${carroPopular.marca}, modelo${carroPopular.modelo} é do ano: ${carroPopular.ano} e quando ele buzina faz: ${carroPopular.buzinar()}</p>')
+
+    const carroEsportivo = new Carro("Ferrai", "Spider", "Ano"); 
+    document.write('<p>O carro ${carroEsportivo.marca}, ${carroEsportivo.modelo} é do ano: ${carroEsportivo.ano} e faz ${carroEsportivo.buzinar()}')
