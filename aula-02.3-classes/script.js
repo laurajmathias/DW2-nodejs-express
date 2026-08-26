@@ -28,3 +28,26 @@
 
     const carroEsportivo = new Carro("Ferrai", "Spider", "Ano"); 
     document.write(`<p>O carro ${carroEsportivo.marca}, ${carroEsportivo.modelo} é do ano: ${carroEsportivo.ano} e faz ${carroEsportivo.buzinar()}`)
+
+    //CRIANDO UMA NOVA INSTANCIA: Carro conversível: 
+
+    const carroConversivel = new Carro(); // - INSTÃNCIA
+    carroConversivel.marca = "Chevrolet"; 
+    carroConversivel.modelo = "Camaro"; 
+    carroConversivel.ano = "2026";
+    
+    //Adicionando um novo atributo (não previsto na classe): 
+    carroConversivel.corNeon = "Azul"; 
+
+    //Adicionando um novo método (não previsto na classe):
+    carroConversivel.turbo = function () {
+        return "Vrummm! O carro está acelerando!!!"; 
+    }; 
+
+   document.write(
+    `O carro ${carroConversivel.marca} ${carroConversivel.modelo} tem neo da cor: ${carroConversivel.corNeon},`
+   ); 
+
+   document.write(
+    `<p> ${carroConversivel.turbo()}</p>`
+   ); 
