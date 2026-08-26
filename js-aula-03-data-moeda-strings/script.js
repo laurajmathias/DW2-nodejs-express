@@ -82,7 +82,35 @@ document.write(`<p>
     })}
     </p>`); 
 
-    
+
+    //#################################################################################################################
+    //FORMATAÇÕES DE STRINGS ------------------------------------------------------------------------------------------
+
+    document.write("<h3>Formatação de Strings: </h3>"); 
+
+    //Por que tratar strings no seu sistema? Criei uma variável de texto e cada um coloca de uma forma; no entanto,eu quero normalizar
+    //(padronizar) as informações. Para isso, usamos a formatação de strings. Vejamos: 
+
+    const nome = "Laura Julia"; 
+
+    //ALTERNANDO STRINGS PARA LETRAS MAIÚSCULAS: 
+    document.write(`<p>${nome.toUpperCase()}</p>`); 
+
+    //ALTERNANDO PARA LETRAS MINÚSCULAS: 
+    document.write(`<p>${nome.toLocaleLowerCase()}</p>`); 
+
+    //COLOCANDO AS INICIAIS EM LETRA MAIÚSCULA: 
+    const cidade = "sete barras"; 
+    const cidadeFormatada = cidade.split(" ").map(palavra => palavra.charAt(0).toUpperCase()); 
+    //Exibindo 
+    document.write(`<p>${cidadeFormatada}</p>`); 
+
+
+    //CONTANDO O NÚMERO DE CARACTERES: 
+    document.write(`<p>Seu nome tem ${nome.replace(/\s/g, "").length} letras.</p>` ); 
+
+    //O comando /\s/g, "" significa espaço, assim, ele retira os espaços por meio do replace e conta as letras. 
+
     
     
 
