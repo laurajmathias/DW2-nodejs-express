@@ -1,12 +1,21 @@
 // arquivo principal do backend
 
+// Configurando o EJS: 
+app.set('view engine', 'ejs') // rendereiza as páginas do site 
 
 //AQUI IRÃO AS ROTAS DO SITE 
 //ROTA PRINCIPAL 
 // .get() -> Cria uma rota da aplicação 
+
+
 app.get("/", (req, res) => {
-    res.send("Oi, bem vindo! =)")
+    res.render('index')
 }); 
+
+//|rota de produtos: 
+app.get("Produtos", (req, ress) => {
+    res.render('/produtos')
+}); //localhost8080/produtos
 
 // IMPORTANDO O EXPRESS PARA O PROJETO: 
 const express = require("express") // - Forma clássica (CommomJS Modules); 
@@ -29,6 +38,22 @@ app.listen(port, (error) => {
 
 });
  
+
+//nodemon - biblioteca para inciar o servidor automático: 
+// terminal = npm install nodemon; 
+
+//para configurar essa biblioteca -> abre o package.json -> vai estar em dependencies -> cria o script pro projeto 
+
+// ao final do script test, põe uma virgula, desce uma linha e escreve: 
+// "npx nodemon index.js" - entre as aspas mesmo 
+
+
+
+// joga npm start no terminale  ele inicializa o servidor a cada modifição do código 
+// o npx é usado para rodar/executar as bibliotecas; 
+
+//Instalar biblioteca EJS para inicializar as páginas do site... npm install ejs 
+
 
 
 
