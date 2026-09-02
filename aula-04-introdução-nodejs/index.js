@@ -7,15 +7,35 @@ app.set('view engine', 'ejs') // rendereiza as páginas do site
 //ROTA PRINCIPAL 
 // .get() -> Cria uma rota da aplicação 
 
+// Exercícios de rota - 
+// 1. Criar as seguintes rotas no site: 
+// /serviços, /clientes, /perfil 
+
 
 app.get("/", (req, res) => {
     res.render('index')
 }); 
 
 //|rota de produtos: 
-app.get("Produtos", (req, ress) => {
+app.get("Produtos", (req, res) => {
     res.render('/produtos')
 }); //localhost8080/produtos
+
+app.get("Servicos", (req, res) => {
+    res.render('/servicos')
+} ); 
+
+app.get("Clientes", (req, res) => {
+    res.render('/clientes')
+}); 
+
+app.get("Perfil", (re1, res) => {
+    res.render('/perfil')
+}); 
+
+// 2 - Criar páginas EJS para cada uma. 
+// 3 - Incluir todfas as rotas no menu principal 
+// 4 - incluir botão de voltar em todas as páginas
 
 // IMPORTANDO O EXPRESS PARA O PROJETO: 
 const express = require("express") // - Forma clássica (CommomJS Modules); 
