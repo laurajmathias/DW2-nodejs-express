@@ -10,5 +10,34 @@
     <br>
     <h1 style = "text-align: center ;">Página de produtos! </h1>
 
+    <!-- Comentário em EJS:    -->
+      <%#= comentário #%>
+    <!-- Chamando a variável para ser exibida na página -->
+    <%#= produtos #%> 
+
+     <!-- Percorrendo a lista de produtos através do forEach:  -->
+      <%p produtos.forEach(produto => { %> 
+        <p> Porduto: <%produto.nome%> </p>
+         <p> Preço: <%produto.preco%> </p>
+          <p>Marca: >: <%produto.marca%> </p>
+          <br>
+        <%  }) %> 
+
+        <!--for|Each dentro da tabela:  -->
+
+        <table border="1">
+            <tr width = "150px">Cliente
+                 <tr>CPF</tr>
+            </tr>
+            <!-- forEach:  -->
+            <%clientes.forEach(cliente => { %> 
+                <tr>
+                    <td> <%= cliente.nome%></td>
+                    <td><%cliente.CPF%></td>
+                </tr>
+            <%})%>
+           
+        </table>
+
 </body>
 </html>

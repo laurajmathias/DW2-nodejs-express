@@ -18,22 +18,7 @@ app.get("/", (req, res) => {
 
 //|rota de produtos: 
 app.get("Produtos", (req, res) => {
-    //Lista de produtos (dados mockados)
-    //Futuramente os dados virão do banco de dados
-    //Array de objetos
-
-    const produtos = [
-        {nome: "Computador", marca: "Lenovo", preco: 3500}, 
-        {nome: "Celular", marca: "Samsung", preco: 4100}, 
-        {nome: "Notebook", marca: "Acer", preco: 5100}, 
-        {nome: "Tablet", marca: "Asus", preco: 2400},  
-
-    ];
-        res.render("produtos", {
-             //Enviando a lista de produtos para a página: 
-             produtos: produtos, 
-
-        }); 
+    res.render('/produtos')
 }); //localhost8080/produtos
 
 app.get("Servicos", (req, res) => {
@@ -41,14 +26,6 @@ app.get("Servicos", (req, res) => {
 } ); 
 
 app.get("Clientes", (req, res) => {
-    const clientes =
-    [
-        {nome: "Diego Max", cpf: "999.999.999-99",}, 
-        {nome: "Gregory Sopuza", cpf: "999.999.999-99"}, 
-        {nome: "Laura Júlia", cpf: "999.999.999-99"}, 
-        {nome: "Mario Armando", cpf: "999.999.999-9"}, 
-        
-    ]; 
     res.render('/clientes')
 }); 
 
@@ -92,7 +69,7 @@ app.listen(port, (error) => {
 
 
 
-// joga npm start no terminal e ele inicializa o servidor a cada modifição do código 
+// joga npm start no terminale  ele inicializa o servidor a cada modifição do código 
 // o npx é usado para rodar/executar as bibliotecas; 
 
 //Instalar biblioteca EJS para inicializar as páginas do site... npm install ejs 
