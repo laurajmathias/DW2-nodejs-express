@@ -1,0 +1,17 @@
+{
+  "name": "aula",
+  "version": "1.0.0",
+  "description": "Aula 4 - Introdução a Nodejs",
+  "license": "ISC",
+  "author": "Laura Julia",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
