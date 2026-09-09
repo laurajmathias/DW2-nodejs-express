@@ -9,7 +9,9 @@ const app = express(); // Criando uma instancia do express, pega o express e car
 // Configurando o EJS: 
 
 app.set('view engine', 'ejs') // renderiza as páginas do site 
+//Configurando a pasta de arquivos estáticos - public:
 
+app.use(express.static('public')) // pasta de arquivos estáticos (css, js, imagens)
 
 
 // AQUI IRÃO AS ROTAS DO SITE 
