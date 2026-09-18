@@ -1,0 +1,25 @@
+<!-- Importando o cabeçalho -->
+<%- include('partials/header.ejs')%>
+<!-- Importando a Nav bar -->
+<%- include('partials/navbar.ejs')%>
+
+    
+    <h4 style="text-align: center;">Página Clientes</h4>
+
+    <table border="1">
+
+        <tr>
+           <th width="150px">Clientes</th>
+           <th>CPF</th>
+        </tr>
+
+        <% clientes.forEach(cliente => {%>
+            <tr>
+                <th><%= cliente.nome%></th>
+                <th><%= cliente.cpf%></th>
+            </tr>
+        <%})%>
+    </table>
+
+<!-- Importando o rodapé -->
+ <%- include('partials/footer.ejs')%>
