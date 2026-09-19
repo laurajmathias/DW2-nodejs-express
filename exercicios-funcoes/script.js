@@ -4,13 +4,12 @@ document.write(`<h3> Exercicio 1)</h3>`);
 
 
 function mostrarDados() {
-   document.write(`nome: Laura`); 
-   document.write(`idade: 18 anos`); 
-   document.write(`cidade: Sete Barras`); 
-   
-   mostrarDados(); 
-
+   document.write(`<p>nome: Laura</p>`); 
+   document.write(`<p>idade: 18 anos</p>`); 
+   document.write(`<p>cidade: Sete Barras</p>`); 
 }
+
+mostrarDados(); 
 
 //EXERCICO 2)  Crie uma função que receba dois números como parâmetro em seguida faça a divisão entre eles. O resultado deve ser exibido no console concatenado com uma string. (Ex: “O resultado da divisão foi...”). A função deve ser chamada ao final passando dois números como argumento.
 
@@ -31,16 +30,16 @@ divisão(n1, n2);
 
     document.write(`<h3>Exercicio 3</h3>`); 
 
-    const n1 = 7; 
-    const n2 = 45; 
-    const n3 = 2; 
+    const num1Ex3 = 7; 
+    const num2Ex3 = 45; 
+    const num3Ex3 = 2; 
 
 
     function multiplicar (n1, n2, n3) {
         return n1 * n2 * n3; 
     }
 
-    document.write(`<p> O resultado da mulplicação de ${n1} por ${n2} por ${n3} é igual a: <strong> ${multiplicar(n1, n2, n3)}</strong></p>`)
+    document.write(`<p> O resultado da mulplicação de ${num1Ex3} por ${num2Ex3} por ${num3Ex3} é igual a: <strong> ${multiplicar(num1Ex3, num2Ex3, num3Ex3)}</strong></p>`)
 
 // EXERCÍCIO 4 - 
 
@@ -66,6 +65,9 @@ document.write(`<p>O usuário tem ${idade} e, portanto, é <strong>${maiorIdade(
 
 document.write(`<h3>Exercício 5</h3>`); 
 
+const nota1 = 8; 
+const nota2 = 7;
+
 const media = function (nota1, nota2) {
 
  let resultado = (nota1 + nota2) /2; 
@@ -75,11 +77,9 @@ const media = function (nota1, nota2) {
  } else {
     return "Aprovado"; 
  }
-    const nota1 = 8; 
-    const nota2 = 7;
-    
-    document.write(`<p>A média do aluno é: ${media(nota1, nota2)} `); 
 }
+
+document.write(`<p>A média do aluno é: ${media(nota1, nota2)}</p>`); 
 
 //EXERCÍCIO 6 - 
 
@@ -116,14 +116,3 @@ document.write(`<p>O resultado da soma dos quatro números é de:  ${soma(num1, 
     console.log(`Olá, ${user}! Seja bem-vindo!`);
 
 })("Laura ");
-
-
-
-
-
-
-        
-
-
-
-
