@@ -2,6 +2,28 @@
     <%- include ('partials/navbar.ejs') %>
 
         <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Cadastrar Cliente</h1>
+            </div>
+            <div class="card-body">
+                <!-- Formulário de cadastro de clientes -->
+                   <!-- Method post : método http que envia dados de forma oculta-->
+                <form action="/clientes/cadastrar" method="POST">
+                    <label for="nome">Nome do cliente: :</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome do cliente: " class="form-control" required>
+    
+                    <label for="cpf">CPF do cliente:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Insira o CPF do cliente: " class="form-control" required>
+
+                    <label for="endereco">Endereço do cliente:</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Insira o endereço do cliente: " class="form-control" required>
+
+                    <button type="submit" class="btn btn-sucess">Cadastrar</button>
+                    <button type="reset" class="btn btn-danger">Limpar</button>
+
+                </form>
+            </div>
             <div class="card">
                 <div class="card-header">
                     <h1>Clientes</h1>
