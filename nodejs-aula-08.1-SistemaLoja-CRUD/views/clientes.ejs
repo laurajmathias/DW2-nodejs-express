@@ -28,4 +28,50 @@
          </div>
 
 
+
+    <!-- Tabela de listagem de clientes -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Lista de Clientes</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Verificando se há clientes cadastrados para exibir -->
+                    <% if (typeof clientes !== 'undefined' && clientes.length > 0) { %>
+                        <% clientes.forEach(cliente => { %>
+                            <tr>
+                                <td><%= cliente.id %></td>
+                                <td><%= cliente.nome %></td>
+                                <td><%= cliente.cpf %></td>
+                                <td><%= cliente.endereco %></td>
+                                <td>
+                                    <!-- Botões opcionais para Editar ou Excluir -->
+                                    <a href="/clientes/editar/<%= cliente.id %>" class="btn btn-warning btn-sm">Editar</a>
+                                    <a href="/clientes/excluir/<%= cliente.id %>" class="btn btn-danger btn-sm">Excluir</a>
+                                </td>
+                            </tr>
+                        <% }) %>
+                    <% } else { %>
+                        <tr>
+                            <td colspan="5" class="text-center">Nenhum cliente cadastrado.</td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
         <%- include ('partials/footer.ejs') %>
